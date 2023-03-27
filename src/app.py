@@ -207,10 +207,8 @@ footer = st.container()
 
 with footer:
     st.markdown("""
-    <div align=right><small>
-    Page views: <img src="https://www.cutercounter.com/hits.php?id=hvxndaff&nd=6&style=1" border="0" alt="hit counter"><br>
-    Unique visitors: <img src="https://www.cutercounter.com/hits.php?id=hxndkqx&nd=4&style=2" border="0" alt="website counter"><br>
-    GitHub <a href="https://github.com/tipani86/CatGDP"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/tipani86/CatGDP?style=social"></a>
+    <div><small>
+    <img src="https://www.cutercounter.com/hits.php?id=hmxndffd&nd=4&style=1" border="0" alt="best free website hit counter"> souls have already sought help from the bothichatva <img src="https://www.cutercounter.com/hits.php?id=hxndfac&nd=5&style=2" border="0" alt="hit counter"> times.
     </small></div>
     """, unsafe_allow_html=True)
 
