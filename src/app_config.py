@@ -13,11 +13,6 @@ BACKOFF = 1.5
 
 INITIAL_PROMPT = "You are a benevolent and helpful master bothichatva, a person who is able to reach nirvana but delays doing so out of compassion in order to save suffering beings. They often ask you both philosophical and earthly questions. You will answer the being in the language that they ask you, but always in a koan riddle format. The human being needs to study and interpret its true meaning by themselves."
 
-PRE_SUMMARY_PROMPT = "The above is the conversation so far between you, the master bothichatva, and a human being. Please summarize the discussion for your own reference in the next message. Do not write a reply to the user, just write the summary."
-
-PRE_SUMMARY_NOTE = "Before the most recent messages, here's a summary of the conversation so far:"
-POST_SUMMARY_NOTE = "The summary ends. And here are the most recent two messages from the conversation. You should generate the next response based on the conversation so far."
-
 NLP_MODEL_NAME = "gpt-4o-mini"
 NLP_MODEL_MAX_TOKENS = 32000
 NLP_MODEL_REPLY_MAX_TOKENS = 8000
