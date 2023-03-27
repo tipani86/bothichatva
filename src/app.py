@@ -70,11 +70,13 @@ def get_chat_message(
         file_path = os.path.join(ROOT_DIR, "src", "assets", "user_icon.png")
         src = f"data:image/gif;base64,{get_local_img(file_path)}"
     icon_code = f"<img class='chat-icon' src='{src}' width=32 height=32 alt='avatar'>"
+    if contents == "":
+        contents = "&#8203;"
     formatted_contents = f"""
     <div class="{div_class}">
         {icon_code}
         <div class="chat-bubble" style="background: {color};">
-        &#8203;{contents}
+        {contents}
         </div>
     </div>
     """
@@ -195,16 +197,20 @@ with st.spinner("Initializing App..."):
 
 # Define main layout
 st.header("Amitabha")
-st.subheader("Ask me anything about Buddhism, meditation, or life in general.")
+st.write("Ask me anything about Buddhism, meditation, or life in general.")
 chat_box = st.container()
-st.write("")
 prompt_box = st.empty()
 footer = st.container()
 
 with footer:
+    st.info("""
+    bo·dhi·satt·va
+    _noun_
+    (in Mahayana Buddhism) a person who is able to reach nirvana but delays doing so out of compassion in order to save suffering beings.
+    """, icon="ℹ️")
     st.markdown("""
-    <div><small>
-    <img src="https://www.cutercounter.com/hits.php?id=hmxndffd&nd=4&style=1" border="0" alt="best free website hit counter"> souls have already sought help from the bothichatva <img src="https://www.cutercounter.com/hits.php?id=hxndfac&nd=5&style=1" border="0" alt="hit counter"> times.
+    <div align=right><small>
+    <img src="https://www.cutercounter.com/hits.php?id=hmxndffd&nd=3&style=1" border="0" alt="best free website hit counter"> souls have sought help from bothichatva <img src="https://www.cutercounter.com/hits.php?id=hxndfac&nd=4&style=1" border="0" alt="hit counter"> times.
     </small></div>
     """, unsafe_allow_html=True)
 
@@ -240,7 +246,7 @@ with chat_box:
 
 # Define an input box for human prompts
 with prompt_box:
-    human_prompt = st.text_input("", value="", key=f"text_input_{len(st.session_state.LOG)}")
+    human_prompt = st.text_input("Enter:", value="", label_visibility="hidden", key=f"text_input_{len(st.session_state.LOG)}")
 
 
 # Gate the subsequent chatbot response to only when the user has entered a prompt
