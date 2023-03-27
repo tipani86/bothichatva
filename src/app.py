@@ -199,7 +199,6 @@ with st.spinner("Initializing App..."):
 
 # Define main layout
 st.title("Amitabha")
-st.subheader("")
 chat_box = st.container()
 st.write("")
 prompt_box = st.empty()
@@ -208,7 +207,7 @@ footer = st.container()
 with footer:
     st.markdown("""
     <div><small>
-    <img src="https://www.cutercounter.com/hits.php?id=hmxndffd&nd=4&style=1" border="0" alt="best free website hit counter"> souls have already sought help from the bothichatva <img src="https://www.cutercounter.com/hits.php?id=hxndfac&nd=5&style=2" border="0" alt="hit counter"> times.
+    <img src="https://www.cutercounter.com/hits.php?id=hmxndffd&nd=4&style=1" border="0" alt="best free website hit counter"> souls have already sought help from the bothichatva <img src="https://www.cutercounter.com/hits.php?id=hxndfac&nd=5&style=1" border="0" alt="hit counter"> times.
     </small></div>
     """, unsafe_allow_html=True)
 
