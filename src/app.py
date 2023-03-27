@@ -194,7 +194,8 @@ with st.spinner("Initializing App..."):
 
 
 # Define main layout
-st.title("Amitabha")
+st.header("Amitabha")
+st.subheader("Ask me anything about Buddhism, meditation, or life in general.")
 chat_box = st.container()
 st.write("")
 prompt_box = st.empty()
