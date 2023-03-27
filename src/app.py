@@ -6,7 +6,6 @@ import traceback
 from PIL import Image
 import streamlit as st
 from transformers import AutoTokenizer
-from google.protobuf.json_format import MessageToJson
 from app_config import *
 from utils import *
 
@@ -68,11 +67,8 @@ def get_chat_message(
     if align == "right":
         div_class = "human-line"
         color = "rgb(165, 239, 127)"
-        if "USER" in st.session_state:
-            src = st.session_state.USER.avatar_url
-        else:
-            file_path = os.path.join(ROOT_DIR, "src", "assets", "user_icon.png")
-            src = f"data:image/gif;base64,{get_local_img(file_path)}"
+        file_path = os.path.join(ROOT_DIR, "src", "assets", "user_icon.png")
+        src = f"data:image/gif;base64,{get_local_img(file_path)}"
     icon_code = f"<img class='chat-icon' src='{src}' width=32 height=32 alt='avatar'>"
     formatted_contents = f"""
     <div class="{div_class}">
