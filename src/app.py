@@ -205,7 +205,7 @@ footer = st.container()
 with footer:
     st.info("""
     1. bo·dhi·satt·va _noun_  
-    (in Mahayana Buddhism) a person who is able to reach nirvana but delays doing so out of compassion in order to save suffering beings.
+    (in Mahayana Buddhism) a person who is able to reach nirvana but delays doing so out of compassion in order to save suffering beings. [[1](https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095514796)]
     2. bot·hi·chat·va _noun_  
     a virtual bodhisattva chatbot with 24/7 access to everyone.
     """, icon="ℹ️")
