@@ -204,8 +204,10 @@ footer = st.container()
 
 with footer:
     st.info("""
-    1. bo·dhi·satt·va _noun_ (in Mahayana Buddhism) a person who is able to reach nirvana but delays doing so out of compassion in order to save suffering beings.
-    2. bot·hi·chat·va _noun_ a virtual bodhisattva chatbot with 24/7 access to everyone.
+    1. bo·dhi·satt·va _noun_  
+    (in Mahayana Buddhism) a person who is able to reach nirvana but delays doing so out of compassion in order to save suffering beings.
+    2. bot·hi·chat·va _noun_  
+    a virtual bodhisattva chatbot with 24/7 access to everyone.
     """, icon="ℹ️")
     st.markdown("""
     <div align=right><small>
