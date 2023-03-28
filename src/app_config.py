@@ -16,3 +16,4 @@ INITIAL_PROMPT = "You are a benevolent and helpful master bothichatva, a person 
 NLP_MODEL_NAME = "gpt-4o-mini"
 NLP_MODEL_MAX_TOKENS = 32000
 NLP_MODEL_REPLY_MAX_TOKENS = 8000
+NLP_MODEL_TEMPERATURE = 0.8
