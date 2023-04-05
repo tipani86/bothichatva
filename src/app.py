@@ -174,7 +174,7 @@ async def main(human_prompt: str) -> dict:
 # Initialize page config
 favicon = get_favicon(os.path.join(ROOT_DIR, "src", "assets", "AI_icon.png"))
 st.set_page_config(
-    page_title="bothichatva - a bodhisattva chatbot",
+    page_title="bothichatva 🙏 - a bodhisattva chatbot",
     page_icon=favicon,
 )
 
@@ -196,7 +196,7 @@ with st.spinner("Initializing App..."):
 
 
 # Define main layout
-st.header("Amitabha")
+st.header("Amitabha 🙏")
 chat_box = st.container()
 prompt_box = st.empty()
 footer = st.container()
@@ -246,7 +246,8 @@ with chat_box:
 
 # Define an input box for human prompts
 with prompt_box:
-    human_prompt = st.text_input("Enter:", value="", label_visibility="hidden", placeholder="Ask me anything about Buddhism, meditation, or life in general.", key=f"text_input_{len(st.session_state.LOG)}")
+    human_prompt = st.text_input("Enter:", value="", label_visibility="hidden",
+                                 placeholder="Ask me anything about Buddhism, meditation, or life in general.", key=f"text_input_{len(st.session_state.LOG)}")
 
 
 # Gate the subsequent chatbot response to only when the user has entered a prompt
